@@ -1,9 +1,10 @@
 .topbar {
   width: 100%;
   height: 70px;
-  /* background: #15023a; */
+  background: #ffffff;
   color: #15023a;
   position: fixed;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.23);
   top: 0;
   z-index: 3;
   transition: all 1s ease;

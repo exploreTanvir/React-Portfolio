@@ -15,21 +15,22 @@
   &.active {
     right: 0;
   }
+  ul {
+    list-style: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    width: 60%;
+  }
+  ul li {
+    margin-bottom: 20px;
+  }
+  li:hover {
+    font-weight: 500;
+    overflow: hidden;
+  }
 }
-ul {
-  list-style: none;
-  font-size: 30px;
-  color: white;
-  font-weight: 300;
-  width: 60%;
-}
-ul li {
-  margin-bottom: 20px;
-}
-li:hover {
-  font-weight: 500;
-  overflow: hidden;
-}
+
 a {
   color: inherit;
 }
