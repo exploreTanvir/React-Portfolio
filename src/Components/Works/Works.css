@@ -5,11 +5,19 @@
   align-items: center;
   position: relative;
 
+  @media (max-width: 768px) {
+    overflow: hidden;
+  }
+
   .arrow {
     position: absolute;
     height: 50px;
     width: 50px;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
 
     &.arrowLeft {
       left: 100px;
@@ -28,6 +36,12 @@
     left: 0;
     transition: all 1s ease-out;
 
+    @media (max-width: 768px) {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .container {
       width: 100vw;
       display: flex;
@@ -43,12 +57,21 @@
         align-items: center;
         justify-content: center;
 
+        @media (max-width: 768px) {
+          width: 90%;
+          height: 185gpx;
+          margin: 5px 0;
+        }
+
         .left {
           flex: 4;
           height: 80%;
           display: flex;
           justify-content: center;
           align-items: center;
+          @media (max-width: 768px) {
+            height: 100%;
+          }
 
           .leftContainer {
             width: 90%;
@@ -56,6 +79,10 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @media (max-width: 768px) {
+              height: 95%;
+            }
 
             .imgContainer {
               width: 40px;
@@ -73,9 +100,15 @@
             }
             h2 {
               font-size: 20px;
+              @media (max-width: 768px) {
+                font-size: 14px;
+              }
             }
             p {
               font-size: 13px;
+              @media (max-width: 768px) {
+                font-size: 11px;
+              }
             }
             span {
               font-size: 12px;
@@ -96,6 +129,9 @@
           img {
             width: 400px;
             transform: rotate(-10deg);
+            @media (max-width: 768px) {
+              width: 200px;
+            }
           }
         }
       }

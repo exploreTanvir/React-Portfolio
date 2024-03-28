@@ -12,6 +12,11 @@
   justify-content: center;
   transition: all 1s ease;
 
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 350px;
+  }
+
   &.active {
     right: 0;
   }

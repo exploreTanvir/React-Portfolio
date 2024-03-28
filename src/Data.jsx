@@ -1,14 +1,22 @@
+import phto from "./assets/man (2).png"
+import ui1 from "./assets/ui.png"
+import ui2 from "./assets/ui2.png"
+import ui3 from "./assets/ui3.png"
+import ui4 from "./assets/ui4.png"
+import ui5 from "./assets/ui5.png"
+import ui6 from "./assets/ui6.png"
+
+
 export const featuredPortfolio = [
     {
       id: 1,
       title: "Social Media App",
-      
+      img:phto,
     },
     {
       id: 2,
       title: "Rampa UI Design",
-      img:
-        "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+      img:phto,
     },
     {
       id: 3,
@@ -72,9 +80,8 @@ export const featuredPortfolio = [
   export const mobilePortfolio = [
     {
       id: 1,
-      title: "Mobile Social Media App",
-      img:
-        "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
+      title: "Car Website",
+      img:ui1
     },
     {
       id: 2,
@@ -111,40 +118,36 @@ export const featuredPortfolio = [
   export const designPortfolio = [
     {
       id: 1,
-      title: "Design Social Media App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 2,
-      title: "Design Rampa UI Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 3,
-      title: "Design E-commerce Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 4,
-      title: "Design Relax Mobile App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 5,
-      title: "Design Keser Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+      title: "Car website Interface",
+      img:ui1,
     },
     {
       id: 6,
-      title: "Design Banking App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+      title: "Mobile app Interface",
+      img:ui6
     },
+    
+    {
+      id: 3,
+      title: "E-commerce Web page ",
+      img:ui3
+    },
+    {
+      id: 4,
+      title: "Wedding Web Page",
+      img:ui4
+    },
+    {
+      id: 2,
+      title: "Artificial Intelligence",
+      img:ui2
+    },
+    {
+      id: 5,
+      title: "Design a simple Web page",
+      img:ui5
+    },
+   
   ];
   
   export const contentPortfolio = [

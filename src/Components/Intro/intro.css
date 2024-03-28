@@ -1,48 +1,89 @@
 .intro {
   background: white;
   display: flex;
-}
-.intro .leftDiv {
-  flex: 0.5;
-  overflow: hidden;
-}
-.imgContainer {
-  width: 700px;
-  height: 700px;
-  overflow: hidden;
-  background: crimson;
-  border-radius: 50%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftDiv {
+    flex: 0.5;
+    overflow: hidden;
+    @media (max-width: 768px) {
+      flex: .4; 
+      margin-top: 10px;
+    }
+    
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      overflow: hidden;
+      background: crimson;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        align-items: start;
+        
+      }
+    }
+  }
 
   img {
     height: 90%;
+    @media (max-width: 768px) {
+      height: 50%;
+      align-items: center;
+    }
   }
 }
 
 .intro .rightDiv {
   flex: 0.5;
   position: relative;
+
+  @media (max-width: 768px) {
+    flex: 0.4;
+  }
+
   .rightWrapper {
     width: 100%;
     height: 100%;
-    padding-left: 50px;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+      padding-left: 0;
+      align-items: center;
+      line-height: 3.5rem
+    }
     h1 {
       font-size: 67px;
       margin: 10px 0;
+      @media (max-width: 768px) {
+        font-size: 40px;
+        margin: 0;
+      }
     }
     h2 {
-      font-size: 40px;
+      font-size: 30px;
     }
     h3 {
       font-size: 33px;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
       span {
         color: crimson;
         font-size: inherit;
+        @media (max-width: 768px) {
+          font-size: 25px;  }
       }
       .ityped-cursor {
         animation: blink 1s infinite;
@@ -61,10 +102,15 @@
     position: absolute;
     bottom: 10px;
     left: 40%;
+    @media (max-width: 768px) {
+      bottom: 0;
+      left: 45%;
+    }
 
     img {
       width: 40px;
       animation: alternate 2s infinite;
+      
     }
     @keyframes alternate {
       to {
@@ -72,4 +118,6 @@
       }
     }
   }
+
 }
+  

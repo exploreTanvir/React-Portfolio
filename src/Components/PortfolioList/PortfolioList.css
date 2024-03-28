@@ -5,6 +5,10 @@ li {
   border-radius: 10px;
   cursor: pointer;
 
+  @media (max-width: 768px) {
+    margin-right: 20px;
+  }
+
   &.active {
     background: #15023a;
     color: white;

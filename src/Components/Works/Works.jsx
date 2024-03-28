@@ -20,7 +20,7 @@ export default function Works() {
     {
       id: "2",
       icon: globe,
-      title: "Mobile Application",
+      title: "Web Application",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
@@ -29,7 +29,7 @@ export default function Works() {
     {
       id: "3",
       icon: writing,
-      title: "Branding",
+      title: "UI & UX Design",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
