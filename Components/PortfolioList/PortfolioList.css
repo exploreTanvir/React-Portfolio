@@ -1,0 +1,16 @@
+li {
+  font-size: 18px;
+  margin-right: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    margin-right: 20px;
+  }
+
+  &.active {
+    background: #15023a;
+    color: white;
+  }
+}
