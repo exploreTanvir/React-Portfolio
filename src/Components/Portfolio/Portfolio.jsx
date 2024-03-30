@@ -32,8 +32,8 @@ const Portfolio = () => {
       title: "UI & UX",
     },
     {
-      id: "branding",
-      title: "Branding",
+      id: "WordPress",
+      title: "WordPress",
     },
   ];
 
@@ -47,7 +47,7 @@ const Portfolio = () => {
       break
       case "uiux":setData(designPortfolio)
       break
-      case "branding":setData(contentPortfolio)
+      case "WordPress":setData(contentPortfolio)
       break;
       default:setData(featuredPortfolio)
     }
