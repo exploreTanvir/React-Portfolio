@@ -1,0 +1,70 @@
+.Contact {
+  height: 50vh;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+
+  .container {
+    display: flex;
+
+    .left {
+      width: 34vw;
+      flex-direction: column;
+      align-items: start;
+      margin-left: 6rem;
+
+      p:first-child {
+        font-size: 1.5rem;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-top: 5px;
+      }
+      p {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+    .right {
+      width: 40vw;
+      margin-left: 5rem;
+      form {
+        input,
+        textarea {
+          border-bottom: 2px solid rgb(0, 0, 0) !important;
+          color: rgb(0, 0, 0);
+          font-size: 1rem;
+          background: none;
+          padding: 15px 5px;
+          width: 80%;
+          border: none;
+        }
+        button {
+          color: crimson;
+          background: none;
+          padding: 10px 25px;
+          font-size: 1.3rem;
+          border-radius: 30px;
+          margin-top: 15px;
+          border: 2px solid crimson;
+        }
+        button:hover {
+          background: crimson;
+          color: white;
+          transition: 1s all ease;
+        }
+      }
+      .icon {
+        margin-top: 10px;
+        i {
+          margin: 7px;
+          font-size: 1.5rem;
+          color: crimson;
+        }
+      }
+    }
+  }
+}

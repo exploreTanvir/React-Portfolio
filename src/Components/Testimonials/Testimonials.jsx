@@ -1,31 +1,33 @@
 import React from 'react'
-import "./Testimonials.css"
-import rightArrow from "../../assets/right-arrow.png"
-import youtube from "../../assets/youtube.png"
-import twitter from "../../assets/twitter.png"
+import bayzid from "../../assets/bayjid.jpg"
 import linkedin from "../../assets/linkedin.png"
+import rightArrow from "../../assets/right-arrow.png"
+import touhid from "../../assets/touhidSir.jpg"
+import twitter from "../../assets/twitter.png"
+import youtube from "../../assets/youtube.png"
+import "./Testimonials.css"
 
 const Testimonials = () => {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
+      name: "Bayjid Ahmed",
+      title: "Instructor at Anneshon",
       img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        bayzid,
       icon: twitter,
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "In summary, Tanvir has exceeded expectations in his role as a instructor. Her dedication, professionalism, and strong work ethic make him an asset to our team.",
     },
     {
       id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
+      name: "Md. Touhid Hossain",
+      title: "Founder At Anneshon",
       img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        touhid,
       icon: youtube,
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis hic. ",
+        "Moreover, Tanvir is a proactive team player who willingly shares his knowledge and expertise with colleagues. He actively participates in brainstorming sessions, mentors junior engineers, and fosters a collaborative work environment that encourages learning and growth.",
       featured: true,
     },
     {
