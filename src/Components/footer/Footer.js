@@ -10,9 +10,10 @@ const Footer = () => {
             </div>
             <div>
                 <a href="https://www.facebook.com/exploreTanvir"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="/#"><i className="fa-brands fa-instagram-square"></i></a>
+                <a href="https://www.instagram.com/xploretanvir"><i className="fa-brands fa-instagram-square"></i></a>
                 <a target="blank" href="https://github.com/exploreTanvir"><i className="fa-brands fa-github-square"></i></a>
-                <a href="/#"><i className="fa-brands fa-twitter-square"></i></a>
+                <a href="https://twitter.com/exploreTanvir"><i className="fa-brands fa-twitter-square"></i></a>
+                <a href="https://linkedin.com/in/exploreTanvir"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
         <div className="bottom">
@@ -25,9 +26,9 @@ const Footer = () => {
             </div>
             <div>
                 <h4>Community</h4>
-                <a href="/#contact">Github</a>
+                <a href="https://github.com/exploreTanvir">Github</a>
                 <a href="/#contact">Project</a>
-                <a href="/#contact">Twitter</a>
+                <a href="https://twitter.com/exploreTanvir">Twitter</a>
             </div>
             <div>
                 <h4>Help</h4>

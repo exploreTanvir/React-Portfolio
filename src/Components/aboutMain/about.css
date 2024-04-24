@@ -1,0 +1,36 @@
+.about {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    font-size: 3rem;
+  }
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .lefts {
+      width: 34vw;
+
+      .percentage {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .rights {
+      width: 40vw;
+    }
+  }
+}

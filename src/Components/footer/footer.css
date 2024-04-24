@@ -14,9 +14,10 @@
   color: #fff;
   font-size: 2rem;
   margin-left: 1rem;
+  overflow: hidden;
 }
 .top i:hover {
-  color: #01959a;
+  color: crimson;
 }
 .bottom {
   padding-top: 2rem;
