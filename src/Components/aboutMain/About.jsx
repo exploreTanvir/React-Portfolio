@@ -39,7 +39,87 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="rights"></div>
+            <div className="rights">
+
+              <div className="skill">
+                
+               <div className="l">
+               <div className='bars'>
+                  <h4>HTML</h4>
+                  <div className="bar">
+                    <div className="html piece">90%</div>
+                  </div>
+                </div>
+
+                <div className='bars'>
+                  <h4>CSS</h4>
+                  <div className="bar">
+                    <div className="css piece">75%</div>
+                  </div>
+                </div>
+
+                <div className='bars'>
+                  <h4>BOOTSTRAP</h4>
+                  <div className="bar">
+                    <div className="bootstrap piece">80%</div>
+                  </div>
+                </div>
+
+                <div className='bars'>
+                  <h4>JS</h4>
+                  <div className="bar">
+                    <div className="js piece">78%</div>
+                  </div>
+                </div>
+
+                <div className='bars'>
+                  <h4>Figma</h4>
+                  <div className="bar">
+                    <div className="figma piece">85%</div>
+                  </div>
+                </div>
+               </div>
+
+              
+               <div className="r">
+               <div className='bars'>
+                  <h4>WORDPRESS</h4>
+                  <div className="bar">
+                    <div className="WordPress piece">83%</div>
+                  </div>
+                </div>
+
+                <div className='bars'>
+                  <h4>REACT</h4>
+                  <div className="bar">
+                    <div className="react piece">75%</div>
+                  </div>
+                </div>
+
+                <div className='bars'>
+                  <h4>NODE</h4>
+                  <div className="bar">
+                    <div className="node piece">67%</div>
+                  </div>
+                </div>
+
+                <div className='bars'>
+                  <h4>EXPRESS</h4>
+                  <div className="bar">
+                    <div className="express piece">83%</div>
+                  </div>
+                </div>
+
+                <div className='bars'>
+                  <h4>MONGODB</h4>
+                  <div className="bar">
+                    <div className="mongodb piece">65%</div>
+                  </div>
+                </div>
+               </div>
+                
+              </div>
+            </div>
         </div>
     </div>
   )

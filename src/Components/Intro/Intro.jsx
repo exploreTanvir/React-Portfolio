@@ -21,7 +21,7 @@ const textRef=useRef()
     <div className='intro' id='intro'>
       <div className='leftDiv'>
         <div className='imgContainer'>
-          <img src={man} alt='profile'/>
+          <img src={man} alt='profile' className='animated'/>
         </div>
       </div>
       <div className='rightDiv'>
@@ -31,7 +31,7 @@ const textRef=useRef()
           <h3>I'm A <span ref={textRef}></span></h3>
         </div>
         <a href='#portfolio'>
-          <img src={down} alt="Down Img" />
+          <img src={down} alt="Down Img" className='ityped-cursor' />
         </a>
       </div>
     </div>

@@ -11,10 +11,9 @@
     flex: 0.5;
     overflow: hidden;
     @media (max-width: 768px) {
-      flex: .4; 
+      flex: 0.4;
       margin-top: 10px;
     }
-    
 
     .imgContainer {
       width: 700px;
@@ -28,13 +27,13 @@
 
       @media (max-width: 768px) {
         align-items: start;
-        
       }
     }
   }
 
   img {
     height: 90%;
+
     @media (max-width: 768px) {
       height: 50%;
       align-items: center;
@@ -61,7 +60,7 @@
     @media (max-width: 768px) {
       padding-left: 0;
       align-items: center;
-      line-height: 3.5rem
+      line-height: 3.5rem;
     }
     h1 {
       font-size: 67px;
@@ -83,7 +82,8 @@
         color: crimson;
         font-size: inherit;
         @media (max-width: 768px) {
-          font-size: 25px;  }
+          font-size: 25px;
+        }
       }
       .ityped-cursor {
         animation: blink 1s infinite;
@@ -110,7 +110,6 @@
     img {
       width: 40px;
       animation: alternate 2s infinite;
-      
     }
     @keyframes alternate {
       to {
@@ -118,6 +117,4 @@
       }
     }
   }
-
 }
-  

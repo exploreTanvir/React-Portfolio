@@ -3,6 +3,7 @@ import "./footer.css"
 const Footer = () => {
   return (
     <div className="footer">
+        <div className="main">
         <div className="top">
             <div>
                 <h1>MTHR</h1>
@@ -41,6 +42,7 @@ const Footer = () => {
                 <a href="/#contact">Terms of service</a>
                 <a href="/#contact">Privacy policy</a>
             </div>
+        </div>
         </div>
     </div>
   )

@@ -6,6 +6,7 @@
   flex-direction: column;
   h1 {
     font-size: 3rem;
+    margin-bottom: 1.5rem;
   }
   .main {
     display: flex;
@@ -15,22 +16,144 @@
     .lefts {
       width: 34vw;
 
+      h3 {
+        font-size: 1.5rem;
+        color: rgb(53, 53, 53);
+      }
+      p {
+        margin: 20px 0;
+        line-height: 1.5rem;
+        color: rgb(80, 80, 80);
+      }
       .percentage {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-around;
+        text-align: center;
+        margin: 20px 0;
+
+        .first,
+        .middle,
+        .last {
+          h1 {
+            margin: 0;
+            margin-bottom: 0.5rem;
+          }
+          p {
+            margin: 1px !important;
+            color: crimson;
+          }
+        }
       }
 
       .icons {
         display: flex;
         align-items: center;
+        margin-top: 30px;
         justify-content: space-between;
+
+        button {
+          padding: 10px 15px;
+          border: 2px solid crimson;
+          background: white;
+          color: crimson;
+          border-radius: 7px;
+          font-weight: bold;
+
+          &:hover {
+            background: crimson;
+            color: white;
+            transition: 1s all ease;
+          }
+        }
+
+        i {
+          margin: 7px;
+          font-size: 1.5rem;
+          color: crimson;
+
+          &:hover {
+            color: rgb(2, 102, 104);
+            transition: 1s all ease;
+          }
+        }
       }
     }
 
     .rights {
-      width: 40vw;
+      width: 53vw;
+
+      .skill {
+        margin: 30px auto;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .l,
+        .r {
+          margin-left: 2rem;
+        }
+
+        .bars {
+          margin: 22px 0;
+          h4 {
+            margin-bottom: 10px;
+            color: #000;
+          }
+
+          .bar {
+            width: 20rem;
+            background: rgb(255, 255, 255);
+            /* border: 1px solid black; */
+            height: 16px;
+            box-shadow: -1px 0px 4px 0px crimson inset;
+            border-radius: 4px;
+            font-size: 13px;
+
+            .piece {
+              background: crimson;
+              height: 16px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 3px;
+              overflow: hidden;
+            }
+            .html {
+              width: 90%;
+            }
+            .css {
+              width: 75%;
+            }
+            .bootstrap {
+              width: 85%;
+            }
+            .js {
+              width: 78%;
+            }
+            .figma {
+              width: 85%;
+            }
+            .WordPress {
+              width: 83%;
+            }
+            .react {
+              width: 75%;
+            }
+            .node {
+              width: 67%;
+            }
+            .express {
+              width: 83%;
+            }
+            .mongodb {
+              width: 65%;
+            }
+          }
+        }
+      }
     }
   }
 }
