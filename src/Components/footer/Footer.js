@@ -1,23 +1,36 @@
-import "./footer.css"
+import { Facebook, GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
-        <div className="main">
-        <div className="top">
-            <div>
+    <div className="footer container-fluid text-white d-flex align-items-center justify-content-center">
+        <div className="row">
+        
+            <div className="col-lg-6 col-sm-12">
                 <h1>MTHR</h1>
                 <p>For any kind of information please contact my social platform.</p>
             </div>
-            <div>
-                <a href="https://www.facebook.com/exploreTanvir"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/xploretanvir"><i className="fa-brands fa-instagram-square"></i></a>
-                <a target="blank" href="https://github.com/exploreTanvir"><i className="fa-brands fa-github-square"></i></a>
-                <a href="https://twitter.com/exploreTanvir"><i className="fa-brands fa-twitter-square"></i></a>
-                <a href="https://linkedin.com/in/exploreTanvir"><i class="fa-brands fa-linkedin"></i></a>
+            <div className="socialIcons col-lg-6 col-sm-12 align-items-center justify-content-end d-flex text-white">
+            <div className="socialIcon" style={{background:"#3B5999"}}>
+                <Facebook className="icons"/>
+                </div>
+                <div className="socialIcon" style={{background:"#E4405F"}}>
+                <Instagram className="icons"/>
+                </div>
+                <div className="socialIcon" style={{background:"#000"}}>
+                <GitHub className="icons"/>
+                </div>
+                
+                <div className="socialIcon " style={{background:"#3B5999"}}>
+                <LinkedIn className="icons"/>
+                </div>
+                <div className="socialIcon" style={{background:"#55ACEE"}}>
+                <Twitter className="icons"/>
+                </div>
+                
             </div>
-        </div>
-        <div className="bottom">
+        
+        <div className="bottom pt-4  d-flex align-items-center justify-content-between">
             <div>
                 <h4>Project</h4>
                 <a href="/#contact">Changelog</a>

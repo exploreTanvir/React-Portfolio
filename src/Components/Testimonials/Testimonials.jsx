@@ -43,8 +43,8 @@ const Testimonials = () => {
   ];
   return (
     <div className='testimonials' id='testimonials'>
-      <h1>Testimonials</h1>
-      <div className="container">
+      <h1>Testimonials </h1>
+      <div className="container-fluid testimonialContainer ">
        {data.map((d)=>(
          <div className={d.featured?"cards featured":"cards"}>
          <div className="top">

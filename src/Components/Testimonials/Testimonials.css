@@ -18,8 +18,8 @@
       overflow: hidden;
     }
   }
-  .container {
-    height: 80%;
+  .testimonialContainer {
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;

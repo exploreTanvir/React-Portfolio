@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import "./portfolio.css"
-import PortfolioList from '../PortfolioList/PortfolioList';
+import React, { useEffect, useState } from 'react';
 import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
   contentPortfolio,
+  designPortfolio,
+  featuredPortfolio,
+  mobilePortfolio,
+  webPortfolio,
 } from "../../Data";
+import PortfolioList from '../PortfolioList/PortfolioList';
+import "./portfolio.css";
 
 const Portfolio = () => {
 
@@ -57,16 +57,16 @@ const Portfolio = () => {
 
 
   return (
-    <div className='portfolio' id='portfolio'>
-      <h1>Portfolio</h1>
-      <ul>
+    <div className='portfolio d-flex flex-column align-items-center' id='portfolio'>
+      <h1 className='mt-5 fw-bold'>PROJECT'S</h1>
+      <ul className='p-0 d-flex'>
         {list.map((item)=>(
           <PortfolioList title={item.title} active={selected===item.id} set={setSelected} id={item.id}/>
         ))}
       </ul>
-      <div className='container'>
+      <div className='container-fluid itemContainer d-flex align-items-center justify-content-center flex-wrap'>
         {data.map((d)=>(   
-        <div className='items'>
+        <div className='items  d-flex align-items-center justify-content-center text-white'>
           <img src={d.img} alt=''/>
           <h3>{d.title}</h3>
         </div>

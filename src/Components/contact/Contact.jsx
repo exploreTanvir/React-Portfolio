@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
-import "./contact.css"
+import { Facebook, GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import React, { useState } from 'react';
+import positionImg from "../../assets/Base Thash 2.png";
+import "./contact.css";
 
 const Contact = () => {
     const [message,setMessage]=useState(false)
@@ -8,11 +10,11 @@ const Contact = () => {
       setMessage(true)
     }
   return (
-    <div className='Contact' id='contact'>
-        <div className="container">
-            <div className="left">
+    <div className='Contact container-fluid d-flex justify-content-center align-items-center text-white' id='contact'>
+        <div className="row contactRow">
+            <div className="left flex-column align-items-start">
                 <p>Ready to talk?</p>
-                <h1>Contact</h1>
+                <h1 className="mt-2">Contact</h1>
                 <p>Thanks for reaching out to us. We're thrilled to hear from you! Please fill out the form below, and we'll get back to you as soon as possible.</p>
                 <p>
                 Please take a moment to provide us with some details so we can assist you effectively. Don't worry, we'll handle your information with care and respect your privacy.</p>
@@ -29,14 +31,29 @@ const Contact = () => {
                     <button type='submit'>Submit</button>
                     {message && <span> Your message was send :)</span>}
                 </form>
-                <div className="icon">
-                <a href="https://www.facebook.com/exploreTanvir"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/xploretanvir"><i className="fa-brands fa-instagram-square"></i></a>
-                <a target="blank" href="https://github.com/exploreTanvir"><i className="fa-brands fa-github-square"></i></a>
-                <a href="https://twitter.com/exploreTanvir"><i className="fa-brands fa-twitter-square"></i></a>
-                <a href="https://linkedin.com/in/exploreTanvir"><i class="fa-brands fa-linkedin"></i></a>
+                <div className="socialIcons align-items-center justify-content-start d-flex text-white mt-3 ">
+                <div className="socialIcon" style={{background:"#3B5999"}}>
+                <Facebook className="icons"/>
                 </div>
+                <div className="socialIcon" style={{background:"#E4405F"}}>
+                <Instagram className="icons"/>
+                </div>
+                <div className="socialIcon" style={{background:"#000"}}>
+                <GitHub className="icons"/>
+                </div>
+                
+                <div className="socialIcon " style={{background:"#3B5999"}}>
+                <LinkedIn className="icons"/>
+                </div>
+                <div className="socialIcon" style={{background:"#55ACEE"}}>
+                <Twitter className="icons"/>
+                </div>
+                </div>
+                
             </div>
+        </div>
+        <div className="posi">
+          <img src={positionImg} alt="" />
         </div>
     </div>
   )

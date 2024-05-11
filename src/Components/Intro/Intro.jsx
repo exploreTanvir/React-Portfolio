@@ -1,8 +1,10 @@
 import { init } from 'ityped'
 import React, { useEffect, useRef } from 'react'
 import down from "../../assets/down.png"
-import man from "../../assets/man.png"
+import man from "../../assets/man (5).png"
+
 import "./intro.css"
+
 
 const Intro = () => {
 
@@ -18,22 +20,24 @@ const textRef=useRef()
         })
   },[])
   return (
-    <div className='intro' id='intro'>
+    <div className='intro d-flex' id='intro'>
       <div className='leftDiv'>
-        <div className='imgContainer'>
-          <img src={man} alt='profile' className='animated'/>
+        <div className='imgContainer animated d-flex align-items-center justify-content-center'>
+          <img src={man} alt='profile'/>
+          
         </div>
       </div>
       <div className='rightDiv'>
-        <div className='rightWrapper'>
-          <h2>Hi There I'm</h2>
-          <h1>Tanvir Hossen Raju</h1>
-          <h3>I'm A <span ref={textRef}></span></h3>
+        <div className='rightWrapper d-flex justify-content-center flex-column'>
+          <h2 className='text-white'>Hi There I'm</h2>
+          <h1 className='text-white my-3'>Tanvir Hossen Raju</h1>
+          <h3 className='text-white'>I'm A <span ref={textRef}></span></h3>
         </div>
         <a href='#portfolio'>
           <img src={down} alt="Down Img" className='ityped-cursor' />
         </a>
       </div>
+     
     </div>
   )
 }
