@@ -1,3 +1,4 @@
+import { AccountCircleOutlined, Diversity2Outlined, HomeOutlined, HomeRepairServiceOutlined, InfoOutlined, PhoneInTalkOutlined } from '@mui/icons-material'
 import React from 'react'
 import "./menu.css"
 
@@ -6,22 +7,22 @@ const Menu = ({menuOpen,setMenuOpen}) => {
     <div className={'menu '+(menuOpen && "active")}>
         <ul>
             <li onClick={()=>setMenuOpen(false)}>
-                <a href='#intro'>Home</a>
+                <a href='#intro'><HomeOutlined/> Home</a>
             </li>
             <li onClick={()=>setMenuOpen(false)}>
-                <a href='#portfolio'>Portfolio</a>
+                <a href='#portfolio'><AccountCircleOutlined/> Portfolio</a>
             </li>
             <li onClick={()=>setMenuOpen(false)}>
-                <a href='#about'>About</a>
+                <a href='#about'><InfoOutlined/> About</a>
             </li>
             <li onClick={()=>setMenuOpen(false)}>
-                <a href='#works'>Works</a>
+                <a href='#works'><Diversity2Outlined/> Works</a>
             </li>
             <li onClick={()=>setMenuOpen(false)}>
-                <a href='#testimonials'>Testimonials</a>
+                <a href='#testimonials'><HomeRepairServiceOutlined/> Testimonials</a>
             </li>
             <li onClick={()=>setMenuOpen(false)}>
-                <a href='#contact'>Contact</a>
+                <a href='#contact'><PhoneInTalkOutlined/> Contact</a>
             </li>
         </ul>
     </div>
