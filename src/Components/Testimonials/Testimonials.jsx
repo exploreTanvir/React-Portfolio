@@ -1,4 +1,4 @@
-import React from 'react'
+
 import bayzid from "../../assets/bayjid.jpg"
 import linkedin from "../../assets/linkedin.png"
 import rightArrow from "../../assets/right-arrow.png"
