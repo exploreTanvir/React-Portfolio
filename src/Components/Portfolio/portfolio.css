@@ -3,6 +3,7 @@
 
   h1 {
     font-size: 50px;
+    overflow: hidden;
 
     @media (max-width: 768px) {
       font-size: 20px;
@@ -52,8 +53,15 @@
       }
 
       h3 {
-        position: absolute;
         font-size: 20px;
+      }
+      .positionArea {
+        position: absolute;
+
+        button {
+          background: transparent;
+          border: 1pz solid white;
+        }
       }
 
       img {

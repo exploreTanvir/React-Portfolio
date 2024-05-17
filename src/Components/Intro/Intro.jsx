@@ -1,8 +1,8 @@
 import { init } from 'ityped'
 import React, { useEffect, useRef } from 'react'
-import down from "../../assets/down.png"
 import man from "../../assets/man (5).png"
 
+import { KeyboardArrowDown } from '@mui/icons-material'
 import "./intro.css"
 
 
@@ -28,13 +28,13 @@ const textRef=useRef()
         </div>
       </div>
       <div className='rightDiv'>
-        <div className='rightWrapper d-flex justify-content-center flex-column'>
-          <h2 className='text-white'>Hi There I'm</h2>
-          <h1 className='text-white my-3'>Tanvir Hossen Raju</h1>
-          <h3 className='text-white'>I'm A <span ref={textRef}></span></h3>
+        <div className='rightWrapper h-100 d-flex justify-content-center flex-column'>
+          <h2 className='text-white fs-1'>Hi There I'm</h2>
+          <h1 className='text-white fw-bold'>Tanvir Hossen Raju</h1>
+          <h3 className='text-white fs-1'>I'm A <span ref={textRef}></span></h3>
         </div>
         <a href='#portfolio'>
-          <img src={down} alt="Down Img" className='ityped-cursor' />
+          <KeyboardArrowDown className='text-white fs-1'/>
         </a>
       </div>
      

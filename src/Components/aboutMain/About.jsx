@@ -11,7 +11,7 @@ const About = () => {
             <div className="lefts text-white">
               <h3 className='py-3'>Take Your Business to the Next Level We’re Here To All Your Question</h3>
               <p className='pt-3'>Get responsive website for your business from us. No monthly cost. One time setup fee only. Get best website development services at affordable rates from professional web designers!</p>
-              <div className="percentage d-flex align-items-center justify-content-around text-center my-4">
+              <div className="percentage d-flex align-items-center justify-content-between text-center my-4">
 
                <div className="first">
                <h1>73</h1>

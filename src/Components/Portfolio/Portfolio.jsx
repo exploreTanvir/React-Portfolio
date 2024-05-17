@@ -18,6 +18,7 @@ const Portfolio = () => {
     {
       id: "featured",
       title: "Featured",
+
     },
     {
       id: "web",
@@ -59,7 +60,8 @@ const Portfolio = () => {
   return (
     <div className='portfolio d-flex flex-column align-items-center' id='portfolio'>
       <h1 className='mt-5 fw-bold'>PROJECT'S</h1>
-      <ul className='p-0 d-flex'>
+      <ul 
+      className='p-0 d-flex'>
         {list.map((item)=>(
           <PortfolioList title={item.title} active={selected===item.id} set={setSelected} id={item.id}/>
         ))}
@@ -68,7 +70,11 @@ const Portfolio = () => {
         {data.map((d)=>(   
         <div className='items  d-flex align-items-center justify-content-center text-white'>
           <img src={d.img} alt=''/>
-          <h3>{d.title}</h3>
+         <div className="positionArea text-center">
+         <h3>{d.title}</h3>
+          <button className='p-1 rounded-2 text-white'><a target='_blank' href={d.source}>Source</a></button>
+         </div>
+
         </div>
         ))}
       </div>

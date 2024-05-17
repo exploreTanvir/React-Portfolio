@@ -3,6 +3,13 @@
 
   h1 {
     font-size: 3rem;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      margin-top: 10px;
+      overflow: hidden;
+    }
   }
   .main {
     .lefts {
