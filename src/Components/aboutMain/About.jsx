@@ -18,10 +18,6 @@ const About = () => {
                 <p>Project Completed</p>
                </div>
 
-               <div className="middle">
-               <h1>70</h1>
-                <p>Happy Clients</p>
-               </div>
 
                <div className="last">
                <h1>67</h1>
@@ -30,7 +26,7 @@ const About = () => {
               </div>
 
               <div className="icons d-flex justify-content-between">
-                <button className='text-white rounded-3 fs-5'>Download CV</button>
+               <a href="https://drive.google.com/file/d/1c2ZNxbRKzlKqsSTmE2PoumZV5RTYJ0rK/view?usp=drive_link"><button className='text-white rounded-3 fs-5'>Download CV</button></a>
                 <div className="socialIcons align-items-center justify-content-start d-flex text-white">
                 <div className="socialIcon" style={{background:"#3B5999"}}>
                 <a href="github.com/exploretanvir"><Facebook className="icons"/></a>

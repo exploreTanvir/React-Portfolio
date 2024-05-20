@@ -43,7 +43,7 @@
     }
 
     .container {
-      width: 100vw;
+      width: 102vw;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -100,6 +100,7 @@
             }
             h2 {
               font-size: 20px;
+              overflow: hidden;
               @media (max-width: 768px) {
                 font-size: 14px;
               }
@@ -137,4 +138,25 @@
       }
     }
   }
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.leftIcon {
+  left: 20px;
+}
+.rightIcon {
+  right: 20px;
 }

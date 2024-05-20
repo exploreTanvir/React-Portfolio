@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="row">
         
             <div className="col-lg-6 col-sm-12">
-                <h1>MTHR</h1>
+
                 <p>For any kind of information please contact my social platform.</p>
             </div>
             <div className="socialIcons col-lg-6 col-sm-12 align-items-center justify-content-end d-flex text-white">

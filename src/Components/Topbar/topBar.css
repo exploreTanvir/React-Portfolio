@@ -66,6 +66,7 @@ span {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  overflow: hidden;
 }
 .dropDown span {
   width: 100%;

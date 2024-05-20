@@ -8,7 +8,7 @@ const TopBar = ({menuOpen,setMenuOpen}) => {
       <div className='wrapper'>
         <div className='left'>
           <a href='#intro' className='logo'>
-            MTHR
+            TANVIR
           </a>
           <div className='item'>
             <Person className="icon"/>
@@ -16,7 +16,7 @@ const TopBar = ({menuOpen,setMenuOpen}) => {
           </div>
           <div className='item'>
             <Email className="icon"/>
-            <span>tanvirhossen853@gmail.com</span>
+            <span className='ms-1'>tanvirhossen853@gmail.com</span>
           </div> 
         </div>
         <div className='right'>

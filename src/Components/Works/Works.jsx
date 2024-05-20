@@ -1,12 +1,11 @@
+import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
 import { useState } from "react";
-import arrow from "../../assets/arrow.png";
 import globe from "../../assets/globe.png";
 import mobile from "../../assets/mobile.png";
 import writing from "../../assets/writing.png";
 import "./Works.css";
 
 export default function Works() {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
       id: "1",
@@ -37,21 +36,26 @@ export default function Works() {
     },
   ];
 
-  const handleClick = (way) => {
-    way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
-      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
-  };
+  const [slide,setSlide]=useState(0)
+  const handleClick=(direction)=>{
+    if (direction === "left") {
+      setSlide(slide > 0 ? slide - 1 : 2);
+    } else {
+      setSlide(slide < 2 ? slide + 1 : 0);
+    }
+  }
   
   return (
     <div className="works" id="works">
+       <div onClick={()=>handleClick("left")} className="arrow leftIcon rounded-circle position-absolute " direction="left">
+                <ArrowLeftOutlined/>
+            </div>
       <div
-        className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+        className="slider d-flex" style={{ transform: `translateX(-${slide * 82}vw)` }} slide={slide}
       >
         {data.map((d) => (
-          <div className="container">
-            <div className="item">
+          <div className="container d-flex justify-content-center align-items-center">
+            <div className="item ">
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
@@ -72,18 +76,11 @@ export default function Works() {
           </div>
         ))}
       </div>
-      <img
-        src={arrow}
-        className="arrow arrowLeft"
-        alt=""
-        onClick={() => handleClick("left")}
-      />
-      <img
-        src={arrow}
-        className="arrow arrowRight"
-        alt=""
-        onClick={() => handleClick()}
-      />
+
+
+      <div onClick={()=>handleClick()} className="arrow rightIcon rounded-circle position-absolute" direction="right">
+                <ArrowRightOutlined/>
+            </div>
     </div>
   );
 }

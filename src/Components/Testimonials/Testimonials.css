@@ -109,6 +109,7 @@
 
         h3 {
           margin-top: 5px;
+          overflow: hidden;
 
           @media (max-width: 768px) {
             font-size: 14px;

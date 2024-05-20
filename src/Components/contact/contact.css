@@ -12,6 +12,7 @@
       }
       h1 {
         font-size: 2rem;
+        overflow: hidden;
       }
       p {
         font-size: 18px;
