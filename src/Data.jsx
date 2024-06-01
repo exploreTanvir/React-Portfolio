@@ -70,7 +70,7 @@ export const featuredPortfolio = [
   export const mobilePortfolio = [
     {
       id: 1,
-      title: "Computer startup website design",
+      title: "Computer startup website",
       img:d1
     },
     {
