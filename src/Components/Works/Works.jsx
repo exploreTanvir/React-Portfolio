@@ -30,7 +30,7 @@ export default function Works() {
       icon: writing,
       title: "UI & UX Design",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Lorem Ipsum is simply dummy text of the printing.",
       img:
         "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
     },
